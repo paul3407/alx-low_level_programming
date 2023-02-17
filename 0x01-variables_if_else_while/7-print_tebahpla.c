@@ -2,7 +2,6 @@
 /**
  * main - prints the lowercase alphabet in reverse
  * followed by a new line 
- *
  * Description: using the main function
  * this program prints prints the lowercase alphabet in reverse
  * Return: 0
