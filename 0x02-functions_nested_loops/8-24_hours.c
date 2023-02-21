@@ -16,7 +16,6 @@ void jack_bauer(void)
 	{
 	while (minutes <= 59)
 	{
-av
 	hours_reminder = hours % 10;
 	_putchar(hours / 10 + '0');
 	_putchar(hours_reminder + '0');
