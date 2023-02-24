@@ -9,7 +9,7 @@
 
 void print_triangle(int size)
 {
-	kint inc1, inc2;
+	int inc1, inc2;
 
 	if (size > 0)
 	{
@@ -32,5 +32,6 @@ void print_triangle(int size)
 
 			putchar('\n');
 		}
+		return (0);
 	}
 }
