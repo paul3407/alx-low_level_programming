@@ -22,3 +22,28 @@ int is_divisible(int num, int div)
 
 	return (is_divisible(num, div + 1));
 }
+
+/**
+ * is _prime_number - evaluate prime or not
+ * @num: number
+ * Return: return 1 prime - return 0 otherwise
+ */
+
+int is_prime_number(int n)
+{
+	int interator;
+
+	iterator = 2;
+
+	if (n < 2)
+	{
+		return (0);
+	}
+
+	if (n == 2)
+	{
+		return (1);
+	}
+
+	return (evaluate_n(n, iterator));
+}
