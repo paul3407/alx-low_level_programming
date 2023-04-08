@@ -71,9 +71,9 @@ int main(int argc, char *argv[])
 	}
 
 	buffer = create_buffer(argv[2]);
-	from = open(argv[1], 0_RDONLY);
+	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
-	to = open(argv[2], 0_CREAT | 0_WRONLY | 0_TRUNC, 0664);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
 		if (from == -1 || r == -1)
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 		}
 
 		r = read(from, buffer, 1024);
-		to - open(argv[2], 0_WRONLY | 0_APPEND);
+		to = open(argv[2], O_WRONLY | O_APPEND);
 	
 	} while (r > 0);
 
