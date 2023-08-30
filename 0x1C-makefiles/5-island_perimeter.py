@@ -5,8 +5,6 @@ def island_perimeter(grid):
     """Returns PM of the island.
 
     Grid represents water by Zero && land by One.
-
-
     """
     width = len(grid[0])
     height = len(grid)
